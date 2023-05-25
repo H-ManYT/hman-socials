@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>H-Man - Socials</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+
+		.glitch {
+			font-size: 80px;
+			text-align: center;
+			position: relative;
+			display: inline-block;
+			animation: glitch-move 2s infinite linear alternate-reverse;
+			animation-delay: 0s;
+		}
+
+		.glitch::before,
+		.glitch::after {
+			content: attr(data-text);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.glitch::before {
+			text-shadow: -5px 0 blue;
+			clip: rect(0, 900px, 80px, 0);
+			animation: glitch-anim-1 2s infinite linear alternate-reverse;
+			animation-delay: 0s;
+		}
+
+		.glitch::after {
+			text-shadow: 5px 0 red;
+			clip: rect(0, 900px, 80px, 0);
+			animation: glitch-anim-2 3s infinite linear alternate-reverse;
+			animation-delay: 0s;
+		}
+
+		@keyframes glitch-anim-1 {
+			0% {
+				transform: skew(0deg);
+			}
+			20% {
+				transform: skew(-2deg);
+			}
+			40% {
+				transform: skew(2deg);
+			}
+			60% {
+				transform: skew(-2deg);
+			}
+			80% {
+				transform: skew(2deg);
+			}
+			100% {
+				transform: skew(0deg);
+			}
+		}
+
+		@keyframes glitch-anim-2 {
+			0% {
+				transform: skew(0deg);
+			}
+			20% {
+				transform: skew(2deg);
+			}
+			40% {
+				transform: skew(-2deg);
+			}
+			60% {
+				transform: skew(2deg);
+			}
+			80% {
+				transform: skew(-2deg);
+			}
+			100% {
+				transform: skew(0deg);
+			}
+		}
+
+		@keyframes glitch-move {
+			0% {
+				transform: translateX(0);
+			}
+			20% {
+				transform: translateX(-5px);
+			}
+			40% {
+				transform: translateX(5px);
+			}
+			60% {
+				transform: translateX(-5px);
+			}
+			80% {
+				transform: translateX(5px);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		.links {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.links a {
+			display: inline-block;
+			font-size: 24px;
+			color: white;
+			text-decoration: none;
+			margin: 10px;
+			animation: glitch-anim-3 2s infinite linear alternate-reverse;
+		}
+
+		@keyframes glitch-anim-3 {
+			0% {
+				color: white;
+				opacity: 1;
+			}
+			10% {
+				color: transparent;
+				opacity: 0;
+			}
+			15% {
+				color: white;
+				opacity: 1;
+			}
+			20% {
+				color: transparent;
+				opacity: 0;
+			}
+			30% {
+				color: white;
+				opacity: 1;
+			}
+			100% {
+				color: white;
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div style="display: flex; justify-content: center;">
+		<h1 class="glitch" data-text="H-Man">H-Man</h1>
+	</div>
+	<div class="links">
+	<img src="file:///C|/Users/Home/Documents/youtube_logo.png">
+		<a href="https://www.youtube.com/channel/UCh3g4w-hdtL-JeZDae7jdLQ" target="_blank" class="glitch" style="animation-delay: 0.3s;">YouTube</a>
+		<img src="file:///C|/Users/Home/Documents/youtube_logo.png">
+		<a href="https://www.tiktok.com/@h_manyt" target="_blank" class="glitch" style="animation-delay: 0.8s;">TikTok</a>
+		<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngaaa.com%2Fdetail%2F4768645&psig=AOvVaw3LRjm2QLQqtrPTWo6lSpPL&ust=1685074948347000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKCs_r_Pj_8CFQAAAAAdAAAAABAR">
+		<a href="https://www.twitch.tv/h_manyt" target="_blank" class="glitch" style="animation-delay: 1.2s;">Twitch</a>
+		<img src="file:///C|/Users/Home/Documents/youtube_logo.png">
+		<a href="https://www.instagram.com/h_man.yt/" target="_blank" class="glitch" style="animation-delay: 0.5s;">Instagram</a>
+	</div>
+</body>
+</html>
